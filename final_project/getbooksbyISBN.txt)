@@ -1,0 +1,6 @@
+➜  final_project git:(main) ✗ curl http://localhost:5500/isbn/1
+{"author":"Chinua Achebe","title":"Things Fall Apart","reviews":{}}%                                                                                                                                                                                                 
+➜  final_project git:(main) ✗ 
+
+
+

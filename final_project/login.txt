@@ -1,0 +1,6 @@
+                                           
+➜  final_project git:(main) ✗ curl -c cookie.txt -X POST http://localhost:5500/customer/login \
+-H "Content-Type: application/json" \
+-d '{"username": "Ran", "password": "123"}'
+User successfully logged in%                                                                                   
+➜  final_project git:(main) ✗ 
