@@ -98,4 +98,15 @@ const getBookByISBNPromise = (isbn) => {
             console.error("Error fetching book by ISBN:", error);
         });
 };
+
+const getBookByAuthorAsync = async (author) => {
+    try {
+        // שים לב לשימוש ב-encodeURIComponent כדי לטפל ברווחים בשם הסופר
+        const response = await axios.get(`http://localhost:5500/author/${encodeURIComponent(author)}`);
+        console.log("Task 12 - Books by Author:", response.data);
+    } catch (error) {
+        console.error("Error fetching books by author:", error);
+    }
+};
+
 module.exports.general = public_users;
